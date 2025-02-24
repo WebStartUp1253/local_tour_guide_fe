@@ -24,8 +24,14 @@ export default function Page() {
         lng: 88.37151840810824,
       },
     },
+    {
+      key: "gsdgge",
+      geoLocation: {
+        lat: 23.850989,
+        lng: 86.884871,
+      },
+    },
   ];
-
   const myHome = {
     lat: 23.195992181434057,
     lng: 88.09567972485108,
