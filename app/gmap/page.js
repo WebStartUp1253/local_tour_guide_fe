@@ -2,6 +2,7 @@
 import React from 'react'
 import {APIProvider, Map, AdvancedMarker, Pin} from '@vis.gl/react-google-maps';
 
+import getGEOlocation from '../../controller/getGEOlocation';
 
 export default function Page() {
 
@@ -9,6 +10,8 @@ export default function Page() {
     lat: 23.195992181434057,
     lng: 88.09567972485108
   }
+  let geoLoc = getGEOlocation();
+  console.log('geoLoc::', geoLoc)
   return (
     <APIProvider apiKey={'AIzaSyAF5PF39kVNNf9SVpEeNiInBH__wC9ZAhA'}>
     <Map
